@@ -1,0 +1,110 @@
+* {
+	margin    : 0;
+	padding   : 0;
+	box-sizing: border-box;
+}
+
+main{
+    margin: 50px auto;
+    width: 80%;
+}
+
+main >div{
+	background-color: rgb(218 218 218);
+	border-radius: 20px;
+    padding: 25px 40px;
+	margin-bottom: 30px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+
+}
+
+input{
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: none;
+}
+
+.input{
+    margin-right: 30px;
+	width: 100%;
+}
+
+.needed::placeholder{
+	color: red;
+	font-size: 1.3em;
+}
+
+.input:focus{
+	outline: none;
+}
+
+.add{
+    color: white;
+    background: rgb(93, 60, 0);
+    font-weight: 900;
+    font-size: 15px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.add:hover{
+	color: black;
+	background-color: yellow;
+}
+
+
+.task{
+    padding: 15px 20px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}	
+
+.task.done{
+	opacity: 0.6;
+}
+
+
+.task span{
+	margin: -10px 0;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+	transition: 0.2s;
+}	
+
+.task .buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.task .del{
+    background-color: rgb(196, 196, 196);
+}	
+
+.task .del:hover{
+	background-color: red;
+}	
+
+.task:not(:first-of-type){
+	margin-top: 20px;
+}	
+
+.task .done,.undone{
+	background-color: rgb(102, 102, 253);
+}
+
+.do:hover{
+	background-color: green;
+}
