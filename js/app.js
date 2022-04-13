@@ -15,7 +15,7 @@ function addTask() {
         title: input.value
     }
 
-    tasks.push(task)
+    tasks.unshift(task)
     addToPage()
 
     // add tasks array to local storage
