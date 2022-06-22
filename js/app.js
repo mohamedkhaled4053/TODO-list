@@ -26,6 +26,13 @@ function addToPage() {
     // clear taskDiv
     tasksDiv.innerHTML = ''
 
+    // make tasksDiv disappear if there is no tasks
+    if (tasks.length == 0){
+        tasksDiv.style.display = 'none'
+    }else{
+        tasksDiv.style.display = 'block'
+    }
+
     // add the tasks
     tasks.forEach((task, index) => {
         // make task div
