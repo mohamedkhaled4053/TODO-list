@@ -81,6 +81,7 @@ input{
     align-items: center;
     cursor: pointer;
 	transition: 0.2s;
+    user-select: none;
 }	
 
 .task .buttons{
