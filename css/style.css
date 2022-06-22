@@ -87,7 +87,8 @@ input{
 .task .buttons{
     display: flex;
     justify-content: space-between;
-    width: 20%;
+    min-width: 20%;
+    align-items: center;
 }
 
 .task .del{
